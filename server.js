@@ -44,13 +44,10 @@ const connectionParams = {
 		useUnifiedTopology: true,
 };
 
-//This is where mongoose tries to connect to the MongoDB 
+//This is where mongoose connects to the MongoDB 
 mongoose.connect(process.env.MONGODB_URI, connectionParams)
 .then(() => {
-  // listen for requests
-  // app.listen(port, () => {
   console.log("connected to the db and listening on port", process.env.PORT)
-  // })
 })
 .catch((error) => {
   console.log("Could not connect to database!");

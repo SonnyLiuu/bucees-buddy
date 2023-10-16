@@ -51,9 +51,9 @@ const AddTrips = () => {
     return (
         <React.Fragment>
             <form className ='trip-form' onSubmit={tripSubmitHandler}>
-                <div class = "grid-container">
-                    <div class = "grid-child left">
-                        <div class = "locationDiv">
+                <div className = "grid-container">
+                    <div className = "grid-child left">
+                        <div className = "locationDiv">
                             <label for="location">Choose a Location: </label>
                                 <select 
                                     class = "locationSelector"
@@ -112,7 +112,7 @@ const AddTrips = () => {
                                     <option value="#58 Auburn, AL">#58 Auburn, AL</option>
                                 </select>
                         </div>
-                        <div class = "dateDiv">
+                        <div className = "dateDiv">
                             <label for="date">Enter Date: </label>
                             <input
                                 class = "dateSelector"
@@ -124,7 +124,7 @@ const AddTrips = () => {
                                 required
                             />
                         </div>
-                        <div class = "dateDiv">
+                        <div className = "dateDiv">
                             <label for="total">Enter Total: </label>
                             <input
                                 type="number"
@@ -136,8 +136,8 @@ const AddTrips = () => {
                             />
                         </div>
                     </div>
-                    <div class = "grid-child right">
-                        <div class = "checkBoxDiv">
+                    <div className = "grid-child right">
+                        <div className = "checkBoxDiv">
                             <label for="Gas"> Gas </label>
                             <input 
                                 className='checkBox'
@@ -148,7 +148,7 @@ const AddTrips = () => {
                                 onChange = {handleChange}
                             />
                         </div>
-                        <div class = "checkBoxDiv">
+                        <div className = "checkBoxDiv">
                             <label for="Brisket"> Brisket </label>
                             <input 
                                 type = "checkbox" 
@@ -158,7 +158,7 @@ const AddTrips = () => {
                                 onChange = {handleChange}
                             />
                         </div>
-                        <div class = "checkBoxDiv">
+                        <div className = "checkBoxDiv">
                             <label for="Dessert"> Dessert </label>
                             <input 
                                 type = "checkbox" 
@@ -168,7 +168,7 @@ const AddTrips = () => {
                                 onChange = {handleChange}
                             />
                         </div>
-                        <div class = "checkBoxDiv">
+                        <div className = "checkBoxDiv">
                             <label for="HomeGood"> Home Goods </label>
                             <input 
                                 type = "checkbox" 
@@ -178,7 +178,7 @@ const AddTrips = () => {
                                 onChange = {handleChange}
                             />
                         </div>
-                        <div class = "checkBoxDiv">
+                        <div className = "checkBoxDiv">
                             <label for="Outdoor"> Outdoor </label>
                             <input 
                                 type = "checkbox" 
@@ -188,7 +188,7 @@ const AddTrips = () => {
                                 onChange = {handleChange}
                             />
                         </div>
-                        <div class = "checkBoxDiv">
+                        <div className = "checkBoxDiv">
                             <label for="Jerky"> Jerky </label>
                             <input 
                                 type = "checkbox" 
@@ -198,7 +198,7 @@ const AddTrips = () => {
                                 onChange = {handleChange}
                             />
                         </div>
-                        <div class = "checkBoxDiv">
+                        <div className = "checkBoxDiv">
                             <label for="ColdGrab"> Cold Grab n' Go </label>
                             <input 
                                 type = "checkbox" 
@@ -208,7 +208,7 @@ const AddTrips = () => {
                                 onChange = {handleChange}
                             />
                         </div>
-                        <div class = "checkBoxDiv">
+                        <div className = "checkBoxDiv">
                             <label for="HotGrab"> Hot Grab n' Go </label>
                             <input 
                                 type = "checkbox" 
@@ -218,7 +218,7 @@ const AddTrips = () => {
                                 onChange = {handleChange}
                             />
                         </div>
-                        <div class = "checkBoxDiv">
+                        <div className = "checkBoxDiv">
                             <label for="Third"> 3rd-Party </label>
                             <input 
                                 type = "checkbox" 
@@ -230,7 +230,7 @@ const AddTrips = () => {
                         </div>
                     </div>
                 </div>
-                <div class="centerAddButton">
+                <div className="centerAddButton">
                     <Button class="addTripButton" type="submit" >ADD TRIP</Button>
                 </div>
             </form>
