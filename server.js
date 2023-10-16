@@ -22,11 +22,6 @@ app.use("/api/trips", tripRoutes);
 app.use("/api/user", userRoutes);
 
 app.use(express.static(path.join(__dirname + "/frontend/build")));
-// AFTER defining routes: Anything that doesn't match what's above, 
-// send back server.html;
-// app.get('*', (req, res) => {
-//   res.sendFile(path.join(__dirname + '/../frontend/build/server.html'))
-// })
 
 if (process.env.NODE_ENV === "production") {
   app.use(express.static("frontend/build"));
@@ -39,13 +34,8 @@ const port = process.env.PORT || 2500;
 app.listen(port, console.log(`Listening on port ${port}...`));
 
 
-const connectionParams = {
-		useNewUrlParser: true,
-		useUnifiedTopology: true,
-};
-
 //This is where mongoose connects to the MongoDB 
-mongoose.connect(process.env.MONGODB_URI, connectionParams)
+mongoose.connect(process.env.MONGODB_URI)
 .then(() => {
   console.log("connected to the db and listening on port", process.env.PORT)
 })
