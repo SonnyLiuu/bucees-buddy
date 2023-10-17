@@ -21,7 +21,7 @@ const Login = () => {
       <div className={styles.login_form_container}>
         <div className={styles.left}>
           <form className={styles.form_container} onSubmit={handleSubmit}>
-            <h1>Log into Buc-ee Buddy</h1>
+            <h1>Welcome Back Bucco!</h1>
             <input
               type="email"
               placeholder="Email"

@@ -47,7 +47,7 @@ const Stats = () => {
         <div className="stat-page">
           <div className="welcome-user">
             <div>{process.env.REACT_APP_API_KEY}</div>
-            <span><h1 className='WelcomeHeader'>Hi {user.userData.firstName}, welcome to Buc-ee Buddy!</h1></span>
+            <span><h1 className='WelcomeHeader'>Hi {user.userData.firstName}, welcome to Buc-ees Buddy!</h1></span>
           </div>
           <div className = 'grid-container'>
             <div className = 'grid-child left'>
