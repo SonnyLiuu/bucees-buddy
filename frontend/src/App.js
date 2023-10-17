@@ -12,8 +12,12 @@ import Trips from './trips/pages/Trips';
 import AddTrip from './trips/pages/AddTrips';
 import MainNavigation from './shared/components/Navigation/MainNavigation';
 import Stats from './stats/pages/Stats';
+import MapOverview from './map/pages/MapOverview';
 
+// import Auth from './auth/pages/Auth';
 import { useAuthContext } from './shared/hooks/useAuthContext';
+
+import { AuthContext } from './shared/context/AuthContext';
 
 import './App.css';
 
