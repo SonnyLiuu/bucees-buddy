@@ -77,7 +77,7 @@
 .right h1 {
 	margin-top: 0;
 	color: white;
-	font-size: 40px;
+	font-size: 34px;
 	align-self: center;
 }
 
@@ -98,4 +98,10 @@
 	background-color: #B3173F;
 	color: white;
 	margin: 10px;
+}
+.disclaimer {
+  margin: 10px;
+  font-weight: bold;
+	font-size: 14px;
+  text-align: center;
 }

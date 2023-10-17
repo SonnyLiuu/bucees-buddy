@@ -21,7 +21,7 @@ const Login = () => {
       <div className={styles.login_form_container}>
         <div className={styles.left}>
           <form className={styles.form_container} onSubmit={handleSubmit}>
-            <h1>Welcome Back Bucco!</h1>
+            <h1>Welcome to Bucees Buddy!</h1>
             <input
               type="email"
               placeholder="Email"
@@ -56,6 +56,7 @@ const Login = () => {
               Sign Up
             </button>
           </Link>
+          <div className={styles.disclaimer}>Disclaimer: This is not an official Bucee's companion app.</div>
         </div>
       </div>
     </div>
