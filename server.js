@@ -29,9 +29,8 @@ if (process.env.NODE_ENV === "production") {
 }
 
 const port = process.env.PORT;
-app.listen(port, console.log(`Listening on port ${port}...`));
 
-//This is where mongoose connects to the MongoDB
+//This is where mongoose connects to MongoDB
 mongoose
   .connect(process.env.MONGODB_URI)
   .then(() => {
